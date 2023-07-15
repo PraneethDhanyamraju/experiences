@@ -1,0 +1,242 @@
+.card-container{
+ 
+  height:auto;
+  padding: 20px;
+  
+}
+.experience
+{
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left:30%;
+  justify-items: center;
+
+  align-items: center;
+
+}
+.experience>input
+{
+  width: 1000px;
+  height:50px;
+  margin:8px;
+  
+  font-size: 20px;
+}
+i{
+  cursor: pointer;
+  letter-spacing: 3px;
+}
+#btn-icon
+{
+  font-size: 30px;
+}
+button{
+  width:100px;
+  height:65px;
+  background-color: crimson;
+  color:white;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor:pointer;
+  align-self: center;
+}
+.experience>textarea
+{
+  
+  width: auto;
+  height:250px;
+  margin:8px;
+  width:1000px;
+  font-size: 20px;
+}
+h1{
+  font-size:30px;
+  
+}
+h2{
+  font-size:25px;
+}
+h3{
+  font-size: 20px;
+}
+h4{
+  font-size: 18px;
+}
+.text
+{
+  width: 525px;
+  outline: none;
+  background: none;
+
+}
+.card
+{
+  width:450px;
+  height:525px;
+  border-radius:8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 50px;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+  line-height: 25px;
+  
+
+}
+.vertical
+{
+  display: flex;
+
+}
+.filter
+{
+ position: absolute;
+ right: 0;
+}
+.navbar
+{
+  display: flex;
+  position:fixed;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  width: 300px;
+  height: 100%;
+  flex:0.1;
+  row-gap: 50px;
+  background-color:crimson;
+  color: white;
+  font-size: 30px;
+ justify-content: center;
+}
+.card-container
+{
+ 
+  display: flex;
+  
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 50px;
+  position: absolute;
+  left:20%;
+}
+@media screen and (max-width: 1500px) {
+  .navbar{
+    width:200px;
+    font-size: 20px;
+  }
+  .experience>input,.experience>textarea{
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar{
+    width:150px;
+    font-size: 10px;
+  }
+  .experience>input,.experience>textarea{
+    width: 500px;
+  }
+  .card
+  {
+    width:400px;
+  }
+}
+.btn-container
+{
+  display: flex;
+}
+@media screen and (max-width: 765px) {
+  .navbar{
+    width:120px;
+    font-size: 10px;
+
+  }
+  .card
+  {
+    width:290px;
+  }
+  .experience>input,.experience>textarea{
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar{
+    width:100px;
+    font-size: 10px;
+
+  }
+  .experience>input{
+    width:200
+  }
+  .card
+  {
+    width:auto;
+  }
+  .card-container{
+    position: absolute;
+    left: 25%;
+  }
+  .experience>input,.experience>textarea{
+    width: 250px;
+  }
+}
+@media screen and (max-width:300px) {
+  .navbar{
+    width:75px;
+    font-size: 10px;
+
+  }
+  .experience>input,.experience>textarea{
+    width: 175px;
+  }
+  .card
+  {
+    width:auto;
+  }
+  .card-container{
+    position: absolute;
+    left: 25%;
+  }
+}
+.btn-container>i{
+  font-size: 30px;
+  color: crimson;
+}
+
+.home {
+height:100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+row-gap: 100px;
+background: beige;
+}
+
+.type {
+width: 82ch;
+animation: type 8s steps(82), blink .5s step-end infinite alternate;
+white-space: nowrap;
+overflow: hidden;
+
+font-family: monospace;
+font-size: 30px;
+}
+
+@keyframes type {
+from {
+  width: 0
+}
+}
+  
+@keyframes blink {
+50% {
+  border-color: transparent
+}
+}
